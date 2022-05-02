@@ -3,7 +3,9 @@ import Boton from './componentes/Boton.js';
 import Contador from './componentes/Contador.js';
 import freeCodeCampLogo from './imgs/misuse-6.png';
 import { useState } from 'react';
-
+import mrbluelogo from './imgs/Letras_blancas.png';
+import logo from './imgs/Logo.png';
+import Temporizador from './componentes/Temporizador';
 
 function App() {
 
@@ -21,12 +23,17 @@ function App() {
 
     <div className="App">
 
-      <div className='freecodecamp-logo-contenedor'>
+      <div className='logo-con-letras'>
 
         <img
-        className='freecodecamp-logo'
-        src={freeCodeCampLogo}
-        alt='Logo de freeCodeCamp' />
+        className='letras'
+        src={mrbluelogo}
+        alt='Letras del logo de Mr. Blue' />
+          <img
+          className='logo'
+          src={logo}
+          alt='Logo de Mr. Blue' />
+
 
       </div>
 
@@ -44,7 +51,22 @@ function App() {
         esBotonDeClick={false}
         manejarClic={reiniciarContador} />
 
+      
     </div>
+    {/* <div className='temporizador'>
+      <Temporizador 
+      
+      />
+    </div> */}
+
+      <div className='freecodecamp-logo-contenedor'>
+
+        <img
+        className='freecodecamp-logo'
+        src={freeCodeCampLogo}
+        alt='Logo de freeCodeCamp' />
+
+      </div>
 
     </div>
   );
