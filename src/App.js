@@ -1,11 +1,11 @@
 import './App.css';
 import Boton from './componentes/Boton.js';
 import Contador from './componentes/Contador.js';
-import freeCodeCampLogo from './imgs/misuse-6.png';
+import freeCodeCampLogo from './imgs/freecodecamp-logo.png';
 import { useState } from 'react';
-import mrbluelogo from './imgs/Letras_blancas.png';
-import logo from './imgs/Logo.png';
-import Temporizador from './componentes/Temporizador';
+import mrbluelogo from './imgs/Letras_blanca.png';
+
+// import Temporizador from './componentes/Temporizador';
 
 function App() {
 
@@ -26,14 +26,9 @@ function App() {
       <div className='logo-con-letras'>
 
         <img
-        className='letras'
-        src={mrbluelogo}
-        alt='Letras del logo de Mr. Blue' />
-          <img
-          className='logo'
-          src={logo}
-          alt='Logo de Mr. Blue' />
-
+          className='letras'
+          src={mrbluelogo}
+          alt='Letras del logo de Mr. Blue' />
 
       </div>
 
